@@ -1,0 +1,18 @@
+2018-05-17 15:34:15,216 - INFO: need backUp file. make backUp file E:\\temp\20180517\A
+2018-05-17 15:34:15,216 - INFO: need backUp file. make backUp file E:\\temp\20180517\B
+2018-05-17 15:34:15,217 - INFO: need backUp file. make backUp file E:\\temp\20180517\C
+2018-05-17 15:34:15,264 - INFO: the folder is:    A    the number of upload files:    3
+2018-05-17 15:34:15,264 - INFO: statistics rows:    A    the lines of all files:    95
+2018-05-17 15:34:15,267 - INFO: the folder is:    C    the number of upload files:    3
+2018-05-17 15:34:15,267 - INFO: statistics rows:    C    the lines of all files:    25
+2018-05-17 15:34:15,365 - INFO: the folder is:    B    the number of upload files:    3
+2018-05-17 15:34:15,368 - INFO: statistics rows:    B    the lines of all files:    12
+2018-05-17 15:34:16,274 - INFO: remove needRemove.md is ok , this upload end!!!!!!!!!!!!
+2018-05-17 15:35:14,043 - INFO: the folder is:    B    the number of upload files:    0
+2018-05-17 15:35:14,043 - INFO: statistics rows:    B    the lines of all files:    0
+2018-05-17 15:35:14,044 - INFO: the folder is:    A    the number of upload files:    0
+2018-05-17 15:35:14,044 - INFO: statistics rows:    A    the lines of all files:    0
+2018-05-17 15:35:14,045 - INFO: the folder is:    C    the number of upload files:    1
+2018-05-17 15:35:14,046 - INFO: statistics rows:    C    the lines of all files:    12
+2018-05-17 15:35:14,276 - INFO: file name repeat E:\\ceshi\C\jjj.txt
+2018-05-17 15:35:14,280 - INFO: remove needRemove.md is ok , this upload end!!!!!!!!!!!!

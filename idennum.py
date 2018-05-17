@@ -1,6 +1,6 @@
 # coding:utf-8
 # /user/bin/python2.7
-#TODO（王东威）：询问谢鑫关于非正确的证件号码输出时是输出原始的信息还是输出有更改后的信息
+#TODO（dongwei）：询问鑫关于非正确的证件号码输出时是输出原始的信息还是输出有更改后的信息
 """
 该 UDTF函数输入是两个参数   证件号码，证件类型。 输出也是两个参数     判定后的证件号码，判断标志
 身份证的检测的udtf 撰写  身份证号码的构成 ： 6位地址编码 + 8位生日 + 3位顺序码 + 1位校验码
@@ -63,7 +63,7 @@ class IdenNum(BaseUDTF):
             idNumChangeEnd = self.xOut.sub('',idNumChange[:len(idNumChange)-1]) + self.xOut.sub('x',idNumChange[-1])
               #判断修改后的证件号长度是否为15 或者18
             if len(idNumChangeEnd) ==15 or len(idNumChangeEnd) ==18:
-                # TODO(王东威）：编写关于15位证件号码的正则表达式，判断是否为正确的号码
+                # TODO(dongwei）：编写关于15位证件号码的正则表达式，判断是否为正确的号码
                 if self.birthDateMatchRules.match(idNum) is None:
                     if len(idNumChangeEnd) ==15 and idNumChangeEnd[-1] !='x':
                         #把身份证长度为15的号码  转为长度为18的身份证号码  使用 IDCard_15To18 函数转换

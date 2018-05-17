@@ -1,0 +1,100 @@
+2018-05-17 16:23:33,888 - INFO: the number of upload files ----------------->20180516
+2018-05-17 16:23:33,888 - INFO: the file is A , the all is 3
+2018-05-17 16:23:33,888 - INFO: the file is C , the all is 4
+2018-05-17 16:23:33,888 - INFO: the file is B , the all is 3
+2018-05-17 16:23:33,888 - INFO: the rows of upload files ----------------->20180516
+2018-05-17 16:23:33,889 - INFO: the file is A , the allRows is [95, 0]
+2018-05-17 16:23:33,889 - INFO: the file is C , the allRows is [25, 12]
+2018-05-17 16:23:33,889 - INFO: the file is B , the allRows is [12, 0]
+2018-05-17 16:24:18,425 - INFO: the number of upload files ----------------->20180516
+2018-05-17 16:24:18,425 - INFO: the file is A , the all is 3
+2018-05-17 16:24:18,426 - INFO: the file is C , the all is 4
+2018-05-17 16:24:18,426 - INFO: the file is B , the all is 3
+2018-05-17 16:24:18,426 - INFO: the rows of upload files ----------------->20180516
+2018-05-17 16:24:18,426 - INFO: the file is A , the allRows is 95
+2018-05-17 16:24:18,426 - INFO: the file is C , the allRows is 37
+2018-05-17 16:24:18,426 - INFO: the file is B , the allRows is 12
+2018-05-17 16:46:04,216 - ERROR: logName del error
+Traceback (most recent call last):
+  File "C:/Users/SHIMENG/Desktop/王东威/file2Ftp/DailyStatisticsLog.py", line 50, in main
+    delLogFile(os.path.join('allLog',logName),logSaveAbsoluteSec)
+  File "C:/Users/SHIMENG/Desktop/王东威/file2Ftp/DailyStatisticsLog.py", line 41, in delLogFile
+    os.remove(filePath)
+PermissionError: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'allLog\\statistics_20180516.log'
+2018-05-17 16:46:14,518 - ERROR: logName del error
+Traceback (most recent call last):
+  File "C:/Users/SHIMENG/Desktop/王东威/file2Ftp/DailyStatisticsLog.py", line 50, in main
+    delLogFile(os.path.join('allLog',logName),logSaveAbsoluteSec)
+  File "C:/Users/SHIMENG/Desktop/王东威/file2Ftp/DailyStatisticsLog.py", line 41, in delLogFile
+    os.remove(filePath)
+PermissionError: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'allLog\\statistics_20180516.log'
+2018-05-17 16:47:34,796 - ERROR: logName del error
+Traceback (most recent call last):
+  File "C:/Users/SHIMENG/Desktop/王东威/file2Ftp/DailyStatisticsLog.py", line 50, in main
+    delLogFile(os.path.join('allLog',logName),logSaveAbsoluteSec)
+  File "C:/Users/SHIMENG/Desktop/王东威/file2Ftp/DailyStatisticsLog.py", line 41, in delLogFile
+    os.remove(filePath)
+PermissionError: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'allLog\\statistics_20180516.log'
+2018-05-17 16:47:50,303 - ERROR: logName del error
+Traceback (most recent call last):
+  File "C:/Users/SHIMENG/Desktop/王东威/file2Ftp/DailyStatisticsLog.py", line 50, in main
+    delLogFile(os.path.join('allLog',logName),logSaveAbsoluteSec)
+  File "C:/Users/SHIMENG/Desktop/王东威/file2Ftp/DailyStatisticsLog.py", line 41, in delLogFile
+    os.remove(filePath)
+PermissionError: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'allLog\\statistics_20180516.log'
+2018-05-17 16:50:07,784 - ERROR: logName del error
+Traceback (most recent call last):
+  File "C:/Users/SHIMENG/Desktop/王东威/file2Ftp/DailyStatisticsLog.py", line 50, in main
+    delLogFile(os.path.join('allLog',logName),logSaveAbsoluteSec)
+  File "C:/Users/SHIMENG/Desktop/王东威/file2Ftp/DailyStatisticsLog.py", line 41, in delLogFile
+    os.remove(filePath)
+PermissionError: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'allLog\\statistics_20180516.log'
+2018-05-17 16:50:43,915 - ERROR: logName del error
+Traceback (most recent call last):
+  File "C:/Users/SHIMENG/Desktop/王东威/file2Ftp/DailyStatisticsLog.py", line 50, in main
+    delLogFile(os.path.join('allLog',logName),logSaveAbsoluteSec)
+  File "C:/Users/SHIMENG/Desktop/王东威/file2Ftp/DailyStatisticsLog.py", line 41, in delLogFile
+    os.remove(filePath)
+PermissionError: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'allLog\\statistics_20180516.log'
+2018-05-17 16:51:06,228 - ERROR: logName del error
+Traceback (most recent call last):
+  File "C:/Users/SHIMENG/Desktop/王东威/file2Ftp/DailyStatisticsLog.py", line 50, in main
+    delLogFile(os.path.join('allLog',logName),logSaveAbsoluteSec)
+  File "C:/Users/SHIMENG/Desktop/王东威/file2Ftp/DailyStatisticsLog.py", line 41, in delLogFile
+    os.remove(filePath)
+PermissionError: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'allLog\\statistics_20180516.log'
+2018-05-17 16:52:00,522 - ERROR: logName del error
+Traceback (most recent call last):
+  File "C:/Users/SHIMENG/Desktop/王东威/file2Ftp/DailyStatisticsLog.py", line 50, in main
+    delLogFile(os.path.join('allLog',logName),logSaveAbsoluteSec)
+  File "C:/Users/SHIMENG/Desktop/王东威/file2Ftp/DailyStatisticsLog.py", line 41, in delLogFile
+    os.remove(filePath)
+PermissionError: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'allLog\\statistics_20180516.log'
+2018-05-17 16:53:36,801 - ERROR: logName del error
+Traceback (most recent call last):
+  File "C:/Users/SHIMENG/Desktop/王东威/file2Ftp/DailyStatisticsLog.py", line 50, in main
+    delLogFile(os.path.join('allLog',logName),logSaveAbsoluteSec)
+  File "C:/Users/SHIMENG/Desktop/王东威/file2Ftp/DailyStatisticsLog.py", line 41, in delLogFile
+    os.remove(filePath)
+PermissionError: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'allLog\\statistics_20180516.log'
+2018-05-17 16:54:42,294 - ERROR: logName del error
+Traceback (most recent call last):
+  File "C:/Users/SHIMENG/Desktop/王东威/file2Ftp/DailyStatisticsLog.py", line 50, in main
+    delLogFile(os.path.join('allLog',logName),logSaveAbsoluteSec)
+  File "C:/Users/SHIMENG/Desktop/王东威/file2Ftp/DailyStatisticsLog.py", line 41, in delLogFile
+    os.remove(filePath)
+PermissionError: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'allLog\\statistics_20180516.log'
+2018-05-17 17:03:09,708 - ERROR: logName del error
+Traceback (most recent call last):
+  File "C:/Users/SHIMENG/Desktop/王东威/file2Ftp/DailyStatisticsLog.py", line 50, in main
+    delLogFile(os.path.join('allLog',logName),logSaveAbsoluteSec)
+  File "C:/Users/SHIMENG/Desktop/王东威/file2Ftp/DailyStatisticsLog.py", line 41, in delLogFile
+    os.remove(filePath)
+PermissionError: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'allLog\\statistics_20180516.log'
+2018-05-17 17:03:45,186 - ERROR: logName del error
+Traceback (most recent call last):
+  File "C:/Users/SHIMENG/Desktop/王东威/file2Ftp/DailyStatisticsLog.py", line 50, in main
+    delLogFile(os.path.join('allLog',logName),logSaveAbsoluteSec)
+  File "C:/Users/SHIMENG/Desktop/王东威/file2Ftp/DailyStatisticsLog.py", line 41, in delLogFile
+    os.remove(filePath)
+PermissionError: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'allLog\\statistics_20180516.log'
