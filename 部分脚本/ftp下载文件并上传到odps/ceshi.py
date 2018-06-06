@@ -15,17 +15,16 @@ from threadpool import makeRequests
 from odps import ODPS
 
 date_arr = []
-ExpressArr = ['海康动态人脸', 'hk_dong_tai_ren_lian_new_sc']
+ExpressArr = ['海康动态人脸', '']
 fileOld="old.txt"                      #存储已下载文件夹的txt
 fileDownload='/data/dongTaiRenLian/txtAll/'                  #ftp下载文件的存储路径
-CONST_HOST="12.39.109.133"
-CONST_PORT="21"
-CONST_USERNAME="sanhui"
-CONST_PWD="sanhui"
+CONST_HOST=""
+CONST_PORT=""
+CONST_USERNAME=""
+CONST_PWD=""
 ftpRootPath='/data/'                                      #ftp根目录
 runLog='/data/dongTaiRenLian/log/'                         #日志的存储目录
-cOdps = ODPS('ZUcC5zNLhgmBCp4J', 'xAJixgt2VKhvxa1LQGuRK7Qke6fEV0', 'kunlun',
-             endpoint='http://service.cn-xinjiang-xjkl-d01.odps.xjtz.xj/api')
+cOdps = ODPS()
 
 
 def connect():  # ftp连接代码

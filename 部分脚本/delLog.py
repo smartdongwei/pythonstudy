@@ -1,7 +1,7 @@
 ﻿# coding: utf-8
 '''
 用于删除日志   日志只保留15天
-/data/dongTaiRenLian/log    为12.39.140.72上动态人脸的日志
+/data/dongTaiRenLian/log    为   上动态人脸的日志
 /root/kuaiDiLog               为快递实名数据的上传odps脚本日志
 /usr/local/bin/express_log     为快递实名数据ftp下载的日志
 /data/weiZhiShuJu/Log          为实时数据ftp下载和上传脚本log
