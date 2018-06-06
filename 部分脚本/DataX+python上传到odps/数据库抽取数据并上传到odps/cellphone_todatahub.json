@@ -1,0 +1,43 @@
+{"core": {"transport": {"channel": {"speed": {"record": "-1", "byte": "-1"}}}}, "job":{
+	"content":[
+		{
+			"reader":{
+				"name":"mysqlreader",
+				"parameter":{
+					"column":[
+						"imei",
+						"imsi",
+						"id",
+						"pass_time",
+						"device_code"
+					],
+					"connection":[
+						{
+							"jdbcUrl":[
+								"jdbc:mysql://12.39.2.205:3306/info_portal_center"
+							],
+							"table":[
+								"cellphone_code"
+							]
+						}
+					],
+					"password":"Sh0wdata",
+					"splitPk":"",
+					"username":"retrieve",
+					"where":"id>='332308967'"
+				}
+			},
+			"writer":{
+				"name": "txtfilewriter",
+				"parameter": {
+					"path": "/usr/local/bin/shujumen/cellphone_datahub",
+					"fileName": "cellphone_datahub",
+					"writeMode": "truncate",
+					"dateFormat": "yyyy-MM-dd HH:mm:ss",
+					"fieldDelimiter": "$"
+				}
+			}
+		}
+	], "setting": {"speed": {"channel": 50}}
+}
+}

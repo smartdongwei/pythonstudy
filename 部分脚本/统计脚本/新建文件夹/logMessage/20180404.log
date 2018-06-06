@@ -1,0 +1,15 @@
+2018-04-04 10:25:22,256 - ERROR: sanhui.oracle_table_name
+Traceback (most recent call last):
+  File "F:/allPython/�½��ű�/ͳ�ƽű�/oracleTongJi.py", line 42, in full_Oracle_Tongji
+    db = cx_Oracle.connect(fullOracleIniList[1],fullOracleIniList[2], fullOracleIniList[3] + '/' + fullOracleIniList[4])  #创建数据库连接
+NameError: global name 'cx_Oracle' is not defined
+2018-04-04 10:25:22,256 - ERROR: sanhui_oracle_table_name1
+Traceback (most recent call last):
+  File "F:/allPython/�½��ű�/ͳ�ƽű�/oracleTongJi.py", line 61, in Incremental_Oracle_Tongji
+    db = cx_Oracle.connect(IncrementalOracleIniList[1],IncrementalOracleIniList[2], IncrementalOracleIniList[3] + '/' + IncrementalOracleIniList[4])  #创建数据库连接
+NameError: global name 'cx_Oracle' is not defined
+2018-04-04 10:25:22,256 - ERROR: sanhui_oracle_table_name2
+Traceback (most recent call last):
+  File "F:/allPython/�½��ű�/ͳ�ƽű�/oracleTongJi.py", line 61, in Incremental_Oracle_Tongji
+    db = cx_Oracle.connect(IncrementalOracleIniList[1],IncrementalOracleIniList[2], IncrementalOracleIniList[3] + '/' + IncrementalOracleIniList[4])  #创建数据库连接
+NameError: global name 'cx_Oracle' is not defined
