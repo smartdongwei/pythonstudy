@@ -40,7 +40,7 @@ if __name__ == '__main__':
     strToday = time.strftime("%Y%m%d", time.localtime())
     try:
         cOdps = ODPS('ZUcC5zNLhgmBCp4J','xAJixgt2VKhvxa1LQGuRK7Qke6fEV0','kunlun','http://service.cn-xinjiang-xjkl-d01.odps.xjtz.xj/api')
-        cShuRuTable = cOdps.get_table('sjm_cellphone_daily')
+        cShuRuTable = cOdps.get_table('*')
         cShuRuTable.create_partition('dt='+strToday, if_not_exists=True)
         #获取抽取标志
         print '获取抽取标志'

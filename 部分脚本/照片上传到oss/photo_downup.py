@@ -20,7 +20,7 @@ today = datetime.datetime.now().strftime('%Y%m%d')
 logging.basicConfig(level=logging.INFO,format='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s',datefmt='%a, %d %b %Y %H:%M:%S',filename='/usr/local/bin/express_log/' + today + '.log',filemode='a')
 
 # FTP配置，IP，端口，用户名，密码
-FtpArr = [['176.100.13.249','8021','cetcwl','cetcwl']]
+FtpArr = [['','','','']]
 
 # 遍历文件
 def EnumFiles(dir, ext=None):
@@ -39,17 +39,17 @@ def EnumFiles(dir, ext=None):
 # 汇智FTP
 def hzFtp():
     ftp = ftplib.FTP()
-    ftp.connect('12.39.109.133','21')
-    ftp.login('jdsm','jdsm')
+    ftp.connect('','')
+    ftp.login('','')
     ftp.set_debuglevel(0)
     return ftp
 # 照片上传函数
 def UploadPhoto(FtpInfo):
     try:
         #创建oss2:版本bucket对象
-        cEndpoint='12.39.121.158'
-        cAuth=oss2.Auth("ZUcC5zNLhgmBCp4J","xAJixgt2VKhvxa1LQGuRK7Qke6fEV0")
-        cBucket = oss2.Bucket(cAuth, cEndpoint, 'photo-express')
+        cEndpoint=''
+        cAuth=oss2.Auth("","")
+        cBucket = oss2.Bucket(cAuth, cEndpoint, '')
         cFtp = ftplib.FTP()
         cFtp.connect(FtpInfo[0],FtpInfo[1])
         cFtp.login(FtpInfo[2],FtpInfo[3])
@@ -105,19 +105,19 @@ def UploadPhoto(FtpInfo):
                 #else:
                 fp = open(hzpath + cFileName,'rb')
                 print '推送：' + hzpath + cFileName
-                logging.info('给汇智推送文件：' + cFileName)
+                logging.info('给 推送文件：' + cFileName)
                 try:
                     hzftppath = './data/'+ os.path.basename(cLocalPath)
                     print 'hzftppath: '+hzftppath
                     ftp.storbinary('STOR '+hzftppath,fp)
                     fp.close()
-                    print '给汇智推送成功'
-                    logging.info('给汇智推送成功')
+                    print '给 推送成功'
+                    logging.info('给 推送成功')
                     ftp.close()
                 except:
                     fp.close()
-                    print '给汇智推送失败'
-                    logging.info('给汇智推送失败')
+                    print '给 推送失败'
+                    logging.info('给 推送失败')
                     logging.info(traceback.print_exc())
                     ftp.close()
                     continue
@@ -128,9 +128,9 @@ def UploadPhoto(FtpInfo):
 
 def Init(FileArr):
     #遍历中间目录文件
-    cEndpoint='12.39.121.158'
-    cAuth = oss2.Auth("ZUcC5zNLhgmBCp4J","xAJixgt2VKhvxa1LQGuRK7Qke6fEV0")
-    cBucket = oss2.Bucket(cAuth, cEndpoint, 'photo-express')
+    cEndpoint=''
+    cAuth = oss2.Auth("","")
+    cBucket = oss2.Bucket(cAuth, cEndpoint, '')
     #上传文件
     for File in FileArr:
         #print os.path.basename(File)

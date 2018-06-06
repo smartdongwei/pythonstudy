@@ -9,9 +9,9 @@ from datetime import datetime
 import shutil
 import time
 
-FTPIP = '176.100.13.76'  # ftp地址
-UserName = 'sanhuidownload'  # ftp用户名
-PassWord = 'sm1mX4'  # ftp密码
+FTPIP = ''  # ftp地址
+UserName = ''  # ftp用户名
+PassWord = ''  # ftp密码
 FTPGetDirPath = r'/var/ftp/pub/visiter/'  # 从ftp上获取文件所在的路径
 LocalDirPath = '/data/shenDunFangKe/File/'  # 本地暂存路径
 UnZipDirPath = '/data/shenDunFangKe/File/'  # 解压出的文件存放的路径

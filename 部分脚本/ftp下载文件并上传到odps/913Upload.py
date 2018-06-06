@@ -5,8 +5,7 @@ import os
 from ftplib import FTP
 
 ExpressArr = [['疑似im','im_yisi'],['确定im','im_jingque'],['vpn','vpn']]
-cOdps = ODPS('ZUcC5zNLhgmBCp4J', 'xAJixgt2VKhvxa1LQGuRK7Qke6fEV0', 'kunlun',
-             endpoint='http://service.cn-xinjiang-xjkl-d01.odps.xjtz.xj/api')
+cOdps = ODPS('', '', '',endpoint='')
 
 scan_path = '/data1/913data'
 #FTP连接
@@ -75,7 +74,7 @@ def rename(files,scan_path):
 
 #主函数
 if __name__ == '__main__':
-    ftp = ftpconnect("12.39.1.171","ftp_913","ftp_913")
+    ftp = ftpconnect("","","")
     downloadfile(ftp,"/data1/913data/")
     for i in range(3):
         data_arr = []

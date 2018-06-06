@@ -16,16 +16,15 @@ import oss2
 import threadpool as tp
 from threadpool import makeRequests
 
-CONST_HOST="12.39.3.200"   #ftp帐号
-CONST_PORT="49999"         #ftp端口号
-CONST_USERNAME="kexin"     #ftp帐号
-CONST_PWD="5863318"        #ftp密码
-cOdps = ODPS('ZUcC5zNLhgmBCp4J', 'xAJixgt2VKhvxa1LQGuRK7Qke6fEV0', 'kunlun',
-             endpoint='http://service.cn-xinjiang-xjkl-d01.odps.xjtz.xj/api')
+CONST_HOST=""   #ftp帐号
+CONST_PORT=""         #ftp端口号
+CONST_USERNAME=""     #ftp帐号
+CONST_PWD=""        #ftp密码
+cOdps = ODPS()
 
 txtFile = '/data/quanguochangkou/txtfile/'   #txt存储
 csvFile = '/data/quanguochangkou/csvfile/'
-ossPath = 'http://oss-cn-xinjiang-xjkl-d01-a.xjtz.xj/shujumen/quanguochangkou/'
+ossPath = 
 photoPath = '/data/quanguochangkou/photofile/'
 errPath = '/data/quanguochangkou/err/'
 
@@ -122,12 +121,12 @@ def main():
 
 
 if __name__ == '__main__':
-    tableName = 'ut_czrksj_new'
+    tableName = ''
     partiton =  time.strftime("%Y%m%d", time.localtime())
     table_obj = cOdps.get_table(tableName, 'kunlun')  # 创建odps连接
-    cEndpoint = '12.39.121.158'
-    cAuth = oss2.Auth("ZUcC5zNLhgmBCp4J", "xAJixgt2VKhvxa1LQGuRK7Qke6fEV0")
-    cBucket = oss2.Bucket(cAuth, cEndpoint, 'shujumen')
+    cEndpoint = 
+    cAuth = oss2.Auth()
+    cBucket = oss2.Bucket(cAuth, cEndpoint, '')
     try:
         table_obj.create_partition('dt=' + partiton, if_not_exists=True)  # 创建分区
     except:

@@ -103,8 +103,8 @@ if __name__ == '__main__':
 
     DB_NAME = 'demo'              #数据库登录名
     DB_PASSSWD = 'demo'           #数据库登录密码
-    DB_IP = '12.39.141.163'      # 数据库ip
-    DB_PORT = 'orcl'              #数据库端口号
-    TABLE_NAME = 'TJ_RECEIVE'    #数据库表名
+    DB_IP = '**'      # 数据库ip
+    DB_PORT = '****'              #数据库端口号
+    TABLE_NAME = '********'    #数据库表名
     write_Oracle(DB_NAME,DB_PASSSWD,DB_IP,DB_PORT,TABLE_NAME,countSizeRowDict)
 

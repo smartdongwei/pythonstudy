@@ -16,27 +16,11 @@ today = datetime.datetime.now().strftime('%Y%m%d')
 logging.basicConfig(level=logging.INFO, format='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s',
                     datefmt='%a, %d %b %Y %H:%M:%S', filename='/usr/local/bin/log/' + today + '.log', filemode='a')
 
-ExpressArr = [['百世汇通', 'data_express_bsht','bs'],
-              ['中通', 'data_express_zhongtong','zt'],
-              ['宅急送', 'data_express_zjs','zjs'],
-              ['韵达', 'data_express_yunda','yd'],
-              ['圆通', 'data_express_yuantong','yt'],
-              ['顺丰快递', 'data_express_shunfeng','sf'],
-              ['申通', 'data_express_shentong','st'],
-              ['全一', 'data_express_quanyi','qy'],
-              ['民航', 'data_express_minhang','mh'],
-              ['德邦物流', 'data_express_debang','db'],
-              ['EMS', 'data_express_ems','ems'],
-              ['天天速递', 'data_express_tiantiankuaidi','tt'],
-              ['华宇物流', 'data_express_huayuwuliu','hy'],
-              ['盛丰', 'data_express_shengfengwuliu','shengfeng'],
-              ['盛辉', 'data_express_shenghuiwuliu','sh'],
-              ['佳吉', 'data_express_jiaji','jj']
+ExpressArr = [
               ]
 
-# ExpressArr = ['宅急送', '顺丰', '全一', '民航', '德邦', 'EMS']
-cOdps = ODPS('ZUcC5zNLhgmBCp4J', 'xAJixgt2VKhvxa1LQGuRK7Qke6fEV0', 'kunlun',
-             endpoint='http://service.cn-xinjiang-xjkl-d01.odps.xjtz.xj/api')
+# ExpressArr = []
+cOdps = ODPS()
 # 扫描目录
 scan_path = '/data1/express/'
 # 备份目录
@@ -71,8 +55,8 @@ def express_handle(company_info):
     # 推送54所ftp 连接54所ftp
     cFtp = ftplib.FTP()
     try:
-        cFtp.connect('176.100.13.242', '21')
-        cFtp.login('jdgktwo', 'jdgktwo')
+        cFtp.connect('', '')
+        cFtp.login('', '')
     except:
         traceback.print_exc()
 

@@ -8,23 +8,7 @@ import datetime
 from threadpool import makeRequests
 import threadpool as tp
 
-express_arr = [['申通', 'data_express_shentong'],
-               ['中通', 'data_express_zhongtong'],
-               ['圆通', 'data_express_yuantong'],
-               ['德邦物流', 'data_express_debang'],
-               ['全一', 'data_express_quanyi'],
-               ['百世汇通', 'data_express_bsht'],
-               ['民航', 'data_express_minhang'],
-               ['韵达', 'data_express_yunda'],
-               ['顺丰快递', 'data_express_shunfeng'],
-               ['宅急送', 'data_express_zjs'],
-               ['EMS', 'data_express_ems'],
-	       ['天天速递', 'data_express_tiantiankuaidi'],
-	       ['华宇物流', 'data_express_huayuwuliu'],
-	       ['盛辉', 'data_express_shenghui'],
-	       ['盛丰', 'data_express_shengfeng'],
-               ['佳吉','data_express_jiaji']
-			   ]
+
 
 
 # 枚举文件

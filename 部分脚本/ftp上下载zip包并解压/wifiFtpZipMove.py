@@ -24,10 +24,10 @@ scanTxtWifi='/data1/data/WIFIZK/wifizk/'   #数据转换工具的输入目录
 
 logFile='/data1/data/WIFIZK_log/'         #日志的存储位置
 
-CONST_HOST = "176.100.13.249"
-CONST_PORT="8023"
-CONST_USERNAME = "cetcwifi"
-CONST_PWD = "cetcwifi"
+CONST_HOST = "**"
+CONST_PORT="*****"
+CONST_USERNAME = "****"
+CONST_PWD = "****"
 
 def connect():  # ftp连接代码
     try:

@@ -53,8 +53,7 @@ def put_records(db, project_name, topic_name, record_list, error_path, data_file
 def datahub_import(thread_info):
     try:
         # 连接datahub
-        dh = DataHub('ZUcC5zNLhgmBCp4J', 'xAJixgt2VKhvxa1LQGuRK7Qke6fEV0',
-                     'http://datahub.cn-xinjiang-xjkl-d01.streamcompute.xjtz.xj')
+        dh = DataHub()
         # block等待所有shard状态ready
         dh.wait_shards_ready(thread_info[2], thread_info[3])
         # 获取topic

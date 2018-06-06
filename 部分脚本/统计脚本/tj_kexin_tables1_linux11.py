@@ -22,15 +22,7 @@ logging.basicConfig(level=logging.INFO,format='%(message)s',filename='/root/log/
 #os.environ['NLS_LANG'] = 'AMERICAN_AMERICA.ZHS16GBK'
 os.environ['NLS_LANG']='SIMPLIFIED CHINESE_CHINA.UTF8'
 #需要统计的表:表名,数据名
-tables = [['UT_治安_娱乐业附件表','娱乐业附件表'],
-['UT_治安_娱乐业从业人员基本信息','治安_娱乐业从业人员基本信息'],
-['UT_治安_用章单位','治安_用章单位'],
-['UT_治安_印章制作单位信息','治安_印章制作单位信息'],
-['UT_治安_印章基本信息','印章基本信息'],
-['UT_治安_疑似漂白身份人员','治安_疑似漂白身份人员'],
-['UT_治安_烟花爆竹人员基本信息','治安_烟花爆竹人员基本信息'],
-['UT_治安_烟花爆竹单位基本信息','治安_烟花爆竹单位基本信息'],
-['UT_治安_物品入库发','UT_治安_物品入库发']]
+tables = []
 
 today = datetime.datetime.now().strftime('%Y%m%d')
 yestoday = (datetime.datetime.now() + timedelta(days=-1)).strftime('%Y%m%d')
@@ -54,7 +46,7 @@ def statistics_table(table):
     resinfo = resultinfo()
     resinfo.dalei='社会数据'
     resinfo.xiaolei = table[1]
-    db = cx_Oracle.connect('data_user', 'sh_user', '176.0.0.234:1521/bissdb')
+    db = cx_Oracle.connect('***', '***********', '****')
     cursor = db.cursor()
     # 统计今日入库量
     print '统计：' + table[0]
@@ -89,7 +81,7 @@ def statistics_table(table):
 # 将统计结果插入数据库
 def write2db(resinfo):
     print 'dalei:%s\txiaolei:%s\tjrtj:%d\tzrtj:%d\tzl:%d' % (resinfo.dalei,resinfo.xiaolei,resinfo.jrtj,resinfo.zrtj,resinfo.zl)
-    db = cx_Oracle.connect('monitoring','monitoring','12.39.141.163:1521/orcl')
+    db = cx_Oracle.connect('monitoring','monitoring','***/******')
     try:
         cursor = db.cursor()
         cursor.execute('delete monitoring.dp_statis_old234 where dalei = \'%s\' and xiaolei = \'%s\'' % (resinfo.dalei,resinfo.xiaolei))

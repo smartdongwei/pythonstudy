@@ -1,7 +1,5 @@
 # coding:utf-8
 
-
-
 from threadpool import makeRequests
 import traceback
 import socket
@@ -11,12 +9,10 @@ from odps import ODPS
 import time
 import logging
 
-ExpressArr = [['快递实名数据', 'wl_mail']
+ExpressArr = [['快递实名数据', '']
               ]
               
-# ExpressArr = ['宅急送', '顺丰', '全一', '民航', '德邦', 'EMS']
-cOdps = ODPS('ZUcC5zNLhgmBCp4J', 'xAJixgt2VKhvxa1LQGuRK7Qke6fEV0', 'kunlun',
-             endpoint='http://service.cn-xinjiang-xjkl-d01.odps.xjtz.xj/api')
+cOdps = ODPS()
 # 扫描目录
 scan_path = '/data/txt_express/'
 logFile='/root/kuaiDiLog/'      #存放log日志的位置
